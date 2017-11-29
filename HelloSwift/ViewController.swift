@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nameTextFeild: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBAction func setLabelText(_ sender: UIButton) {
+        nameLabel.text = nameTextFeild.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
